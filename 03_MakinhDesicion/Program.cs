@@ -12,7 +12,7 @@ namespace _03_MakinhDesicion
         static void Main(string[] args)
         {
 
-            #region IF
+          #region IF
             //Console.WriteLine("lütfen şifreyi giriniz: ");
             //string password;
             //password = Console.ReadLine();
