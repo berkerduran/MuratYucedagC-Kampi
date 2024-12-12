@@ -10,134 +10,152 @@ namespace _08_Methods
     {
         static void Main(string[] args)
         {
-            #region Methods
+            #region Void Metotlar
 
-            //void Customerlist()
+            //void CustomerList()
             //{
-            //    Console.WriteLine("Ali yıldız ");
-            //    Console.WriteLine("Ayşeyıldız ");
-            //    Console.WriteLine("Veli yıldız ");
-            //    Console.WriteLine("Merve yıldız ");
+            //    Console.WriteLine("1. Ali Yıldız");
+            //    Console.WriteLine("2. Ayşe Yıldız");
+            //    Console.WriteLine("3. Hakan Öztürk");
+            //    Console.WriteLine("4. Merve Çınar");
             //}
-            //Customerlist();
+
+            //CustomerList();
+            //CustomerList();
+            //CustomerList();
+            //CustomerList();
 
             //void Sum()
-            //{ 
-            //    int x = 0;
-            //    int y = 2;
-            //    int z = x+y;
+            //{
+            //    int x = 1, y = 2;
+            //    int z = x + y;
             //    Console.WriteLine(z);
-
-
             //}
+
             //Sum();
+
+
+
             #endregion
 
-            #region Gerideğer dödürmeyen parametreli methodlar 
+            #region Geriye Değer Döndürmeyen String Parametreli Metotlar
 
-
-            //void WriteMethod(string customerName) 
+            //void WriteMethod(string customerName)
             //{
-            //    Console.WriteLine(customerName);            
+            //    Console.WriteLine(customerName);
             //}
-            //WriteMethod("customerName");
 
+            //WriteMethod("Mehmet Yıldırım");
 
-            //void CustomerCard(string name,string surName)
+            //void CustomerCard(string name, string surname)
             //{
-            //    Console.WriteLine("Müşteri:"+name +surName);
+            //    Console.WriteLine("Müşteri: " + name + " " + surname);
             //}
-            //CustomerCard("Mehmet","Yıldız");
+
+            //CustomerCard("Mehmet", "Yıldız");
             //CustomerCard("Ayşegül", "Kaya");
 
+            #endregion
 
-            //void Sum(int number1, int number2,int number3)
+            #region Geriye Değer Döndürmeyen Int Parametreli Metotlar
+
+            //void Sum(int number1, int number2, int number3)
             //{
-            //    int result = number1 + number2+ number3;
+
+            //    int result = number1 + number2 + number3;
             //    Console.WriteLine(result);
+
             //}
 
             //Sum(4, 5, 6);
-
             #endregion
 
             #region Geriye Değer Döndüren Metotlar
 
             //string CustomerName()
             //{
-            //    return "buse Yıldız";
+            //    return "Buse Yıldız";
             //}
+
             //CustomerName();
 
+            //string StudentCard() {
 
-            //string StudentCard()
-            //{
             //    string name = "Ali";
-            //    string surName = "Kaya";
+            //    string surname = "Kaya";
 
-            //    return name + " " + surName;
-
+            //    return name + " " + surname;
             //}
-            //StudentCard();
+
+            //Console.WriteLine(StudentCard());
 
             #endregion
 
-            #region Geriye değer dondüren parametreli metotlar
+            #region Geriye Değer Döndüren String Parametreli Metotlar
 
-
-            //string CountryCard(string countryName, string capital,string flagColor)
+            //string CountryCard(string countryName, string capital, string flagColor)
             //{
 
-            //    string cardInfo = "Ülke: "+countryName+" - Başkent: "+ capital+" - Bayrak Rengi: " +flagColor;
-            //    return cardInfo;
+            //    string cardInfo = "Ülke: "+ countryName + " - Başkent: "
+            //        + capital + " - Bayrak Rengi: " + flagColor;
 
+            //    return cardInfo;
             //}
+
             //string x, y, z;
 
-            //Console.Write("Ülkenin adını giriniz: ");
+            //Console.Write("Ülke adını giriniz: ");
             //x = Console.ReadLine();
 
-            //Console.Write("Başkenti Giriniz: ");
+            //Console.Write("Başkenti giriniz: ");
             //y = Console.ReadLine();
 
-            //Console.Write("lütfen bayrak rengini giriniz ");
+            //Console.Write("Bayrak Rengini Giriniz: ");
             //z = Console.ReadLine();
 
             //Console.WriteLine(CountryCard(x,y,z));
-
-            //Console.WriteLine(CountryCard("türkiye ", "Ankara", "Kırmızı Beyaz"));
+            //Console.WriteLine(CountryCard("Türkiye","Ankara","Kırmızı - Beyaz"));
 
             #endregion
 
-            #region Geriye Değer Döndüren İnt Paramaetreli Metodlar 
+            #region Geriye Değer Döndüren Int Parametreli Metotlar
 
-            //int Sum(int number1,int number2)
-            //{ 
+            ////int Sum(int number1, int number2)
+            //{
             //    int result = number1 + number2;
             //    return result;
             //}
-            //Console.WriteLine(Sum(55,52));
-            //Console.WriteLine(Sum(45, 52));
-            //Console.WriteLine(Sum(59, 15));
-            //Console.WriteLine(Sum(33, 98));
-            #endregion
-            #region Örnek Uygulama
-            string ExamResult(string student, int exam1, int exam2,int exam3)
-            { 
-                int result = (exam1+exam2+exam3)/3;
-                if (result>=50)
-                {
-                    return student + "Adlı öğrenci Başaralı" + "Ortalama:"+result;
 
-                }else
-                {
-                    return student + "Adlı öğrenci Başarısız"+"Ortalama:" + result;
-                }
-              
-            }
-            Console.WriteLine(ExamResult("Ali", 25, 45, 26));
-            Console.WriteLine(ExamResult("Ayşe", 29, 80,66));
+            //Console.WriteLine(Sum(45, 98));
+            //Console.WriteLine(Sum(36, 25));
+            //Console.WriteLine(Sum(44, 36));
+            //Console.WriteLine(Sum(14, 20));
+
             #endregion
+
+            #region Örnek Uygulama
+
+            //string Examresult(string student, int exam1, int exam2, int exam3)
+            //{
+            //    int result = (exam1 + exam2 + exam3) / 3;
+
+            //    if (result >= 50)
+            //    {
+            //        return student + " isimli öğrenci sınavı geçti. " + "Ortalama: " + result;
+            //    }
+            //    else
+            //    {
+            //        return student + " isimli öğrenci sınavı geçemedi. Ortalama: " + result;
+            //    }
+            //}
+
+            //Console.WriteLine(Examresult("Ali", 78, 41, 85));
+            //Console.WriteLine(Examresult("Ayşe", 25, 41, 32));
+
+            #endregion
+
+            Console.Read();
+
         }
     }
 }

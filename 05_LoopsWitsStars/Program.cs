@@ -7,80 +7,172 @@ namespace _05_LoopsWitsStars
         static void Main(string[] args)
         {
 
-            #region Alt alta on tane yıldız oluşturma 
+            #region Alt alta 10 tane yıldız oluşturma 
 
-            //for (int i = 0; i < 10; i++)
+            //int i;
+
+            //for (i = 0; i < 10; i++)
             //{
-            //    Console.WriteLine('*');
+            //    Console.WriteLine("*");
             //}
 
             #endregion
-            #region Alt alta on tane yıldız oluşturma 
 
-            //for (int i = 0; i < 10; i++)
+            #region Yan yana 10 tane yıldız oluşturma 
+
+            //int i;
+
+            //for (i = 0; i < 10; i++)
             //{
-            //    Console.Write("*");s
+            //    Console.Write("*");
             //}
 
             #endregion
-            #region Alt alta on tane yıldız oluşturma her satırda 10 tane yıldız olsun 
 
+            #region Alt alta 10 tane yıldız oluşturma her satırda 10 yıldız
 
-            //for (int i = 0; i < 10; i++)
+            //int i, y;
+
+            //for (i = 0; i < 10; i++)
             //{
-            //    Console.WriteLine("**********");
-            //}
-
-            #endregion
-            #region dik üçgen 
-
-            //for (int i = 1; i <= 5; i++)
-            //{
-
-            //    for (int j = 1; j <= i; j++)
+            //    for (y = 0; y < 10; y++)
             //    {
             //        Console.Write("*");
             //    }
             //    Console.WriteLine();
             //}
 
-
             #endregion
-            #region  ters dik üçgen 
 
-            //for (int i = 5; i >= 1; i--)
+            #region Dik Üçgen
+
+            //int i, y;
+
+            //for (i = 0; i < 5; i++)
             //{
-            //    for (int j = 1; j <= i; j++)
+            //    for (y = 0; y <= i; y++)
             //    {
             //        Console.Write("*");
             //    }
             //    Console.WriteLine();
             //}
 
-
             #endregion
-            #region  dik ve ters dik üçgen  beraber
 
-            //for (int i = 1; i <= 5; i++)
-            //{
+            #region Ters Dik Üçgen
 
-            //    for (int j = 1; j <= i; j++)
-            //    {
-            //        Console.Write("*");
-            //    }
-            //    Console.WriteLine();
-            //}
-            //for (int i = 4; i >= 1; i--)
+            //int i, y;
+
+            //for (i = 5; i > 0; i--)
             //{
-            //    for (int j = 1; j <= i; j++)
+            //    for (y = 0; y < i; y++)
             //    {
             //        Console.Write("*");
             //    }
             //    Console.WriteLine();
             //}
 
+            #endregion
+
+            #region Dik ve Ters Üçgen Beraber
+
+            //int i, y;
+
+            //for (i = 0; i < 5; i++)
+            //{
+            //    for (y = 0; y <= i; y++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //for (i = 4; i > 0; i--)
+            //{
+            //    for (y = 0; y < i; y++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
 
             #endregion
+
+            #region Baklava Dilimi
+
+            //int n = 5;
+            //for (int i = 1; i <= n; i++)
+            //{
+            //    for (int j = n - 1; j > 0; j--)
+            //    {
+            //        Console.Write(" "); ;
+            //    }
+
+            //    for (int k = 1; k <= 2 * i - 1; k++)
+            //    {
+            //        Console.Write("*");
+            //    }
+
+            //    Console.WriteLine();
+            //}
+
+            //for (int i = n - 1; i >= 1; i--)
+            //{
+            //    for (int j = n - 1; j > 0; j--)
+            //    {
+            //        Console.Write(" "); ;
+            //    }
+
+            //    for (int k = 1; k <= 2 * i - 1; k++)
+            //    {
+            //        Console.Write("*");
+            //    }
+
+            //    Console.WriteLine();
+            //}
+
+            #endregion
+
+            #region Piramit
+
+            //int n = 5;
+
+            //for (int i = 1; i <= n; i++) 
+            //{ 
+            //    for (int j = n; j > i; j--)
+            //    {
+            //        Console.Write(" ");
+            //    }
+
+            //    for (int k = 0; k < 2 * i - 1; k++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            #endregion
+
+            #region Ters Piramit
+
+            //int n = 5;
+
+            //for (int i = n; i >= 1; i--)
+            //{
+            //    for (int j = n; j > i; j--)
+            //    {
+            //        Console.Write(" ");
+            //    }
+
+            //    for (int k = 0; k < 2 * i - 1; k++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            #endregion
+
             Console.Read();
         }
     }

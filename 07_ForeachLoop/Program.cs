@@ -11,22 +11,33 @@ namespace _07_ForeachLoop
         static void Main(string[] args)
         {
 
-            #region Foreach döngüsü 
-            //int[] numbers = { 45, 78, 895, 635, 11, 74, 22, 33, 41, 205, 6578, 10394 };
-            //foreach (int number in numbers)
-            //{
-            //    Console.WriteLine(number);
+            #region Foreach Döngüsü
 
+            //string[] cities = { "milano", "roma", "budapeşte", "ankara", "istanbul", "varşova" };
+
+            //foreach (string x in cities)
+            //{
+            //    Console.WriteLine(x);
             //}
-            // int[] numbers = { 45, 78, 895, 635, 11, 74, 22, 33, 41, 205, 6578, 10394 };
+
+            //int[] numbers = { 45, 78, 985, 635, 74, 11, 22, 33, 41, 285, 6578, 1245 };
+
+            //foreach (int i in numbers)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //int[] numbers = { 45, 78, 985, 635, 74, 11, 22, 33, 41, 285, 6578, 1245 };
+
             //foreach (int number in numbers)
             //{
-            //    if (number % 2 == 0)
+            //    if(number % 2 == 0)
             //    {
             //        Console.WriteLine(number);
             //    }
             //}
-            //int[] numbers = { 45, 78, 895, 635, 11, 74, 22, 33, 41, 205, 6578, 10394 };
+
+            //int[] numbers = { 45, 78, 985, 635, 74, 11, 22, 33, 41, 285, 6578, 1245 };
 
             //int total = 0;
 
@@ -34,18 +45,16 @@ namespace _07_ForeachLoop
             //{
             //    total += i;
             //}
-            //Console.WriteLine(total);
 
-            //List<int> numbers = new List<int>()
-            //{
-            //    1,2,3,4,5,8
-            //};
+            //List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 8 };
+
             //foreach (int number in numbers)
             //{
             //    Console.WriteLine(number);
             //}
 
-            //string word = "merhaba";
+            //string word = "Merhaba";
+
             //foreach (char c in word)
             //{
             //    Console.WriteLine(c);
@@ -53,10 +62,9 @@ namespace _07_ForeachLoop
 
 
 
-
             #endregion
 
-            #region Örnek Sınav 
+            #region Örnek Sınav Sistemi Uygulaması
 
             Console.WriteLine("***** C# Eğitim Kampı Sınav Uygulaması *****");
             Console.WriteLine();
@@ -64,47 +72,54 @@ namespace _07_ForeachLoop
             Console.WriteLine();
             Console.WriteLine();
 
-            Console.WriteLine("---------------------------------");
-            Console.WriteLine("Sınıfındızda Kaç Öğrenci Var: ");
+            //Sınıftaki öğrenci sayısını kullanıcıdan alma
+            Console.WriteLine("----------------------------------");
+            Console.Write("Sınıfınızda Kaç Öğrenci var: ");
             int studentCount = int.Parse(Console.ReadLine());
-            Console.WriteLine("---------------------------------");
+            Console.WriteLine("----------------------------------");
 
-
+            //Öğrenci isimlerini ve not ortalamalarını saklayan diziler
             string[] studentNames = new string[studentCount];
+            double[] studentExamAvg = new double[studentCount];
 
-            double[] studentExamAverage = new double[studentCount];
-
-            for (int i = 0; i < studentCount; i++) {
-
-                Console.WriteLine($"{i + 1}. öğrencinin ismini giriniz ");
-                studentNames [i]= Console.ReadLine();
-                double totalExamResult = 0;
-
-                for (int j = 0; j < 3; j++) {
-
-                    Console.WriteLine($"{studentNames[i]} adlı öğrencinin sınav {j + 1}. sınav notunu giriniz: ");
-                    double value = double.Parse(Console.ReadLine());
-                    totalExamResult += value;
-                }
-
-                studentExamAverage[i] = totalExamResult / 3;
-            }
             for (int i = 0; i < studentCount; i++)
             {
+                Console.Write($"{i + 1}. öğrencinin ismini giriniz: ");
+                studentNames[i] = Console.ReadLine();
 
-                Console.WriteLine("---------------------------------");
-                Console.WriteLine($"{studentNames[i]} adlı öğrencinin ortalamsı: {studentExamAverage[i]}");
-                if (studentExamAverage[i] >= 50)
+                double totalExamResult = 0;
+
+                //Her öğrenci için 3 adet sınav notu girişi alıyoruz
+                for (int j = 0; j < 3; j++)
                 {
-                    Console.WriteLine($"{studentNames[i]} adlı öğrenci dersten geçti.");
+                    Console.Write($"{studentNames[i]} adlı öğrencinin {j + 1}. sınav notunu giriniz: ");
+                    double value = double.Parse(Console.ReadLine());
+                    totalExamResult += value; // notları topluyoruz
+                }
+                Console.WriteLine();
+
+                studentExamAvg[i] = totalExamResult / 3;
+            }
+
+            //Öğrencilerin sınav ortalaması
+            for (int i = 0; i < studentCount; i++)
+            {
+                Console.WriteLine("----------------------------------");
+
+                Console.WriteLine($"{studentNames[i]} adlı öğrencinin ortalaması: {studentExamAvg[i]}");
+
+                //Öğrencilerin geçip kalma durumu
+                if (studentExamAvg[i] >= 50)
+                {
+                    Console.WriteLine($"{studentNames[i]} adlı öğrenci dersi geçti.");
                 }
                 else
                 {
-                    Console.WriteLine($"{studentNames[i]} adlı öğrenci dersten kaldı");
+                    Console.WriteLine($"{studentNames[i]} adlı öğrenci dersten kaldı.");
                 }
-                Console.WriteLine("---------------------------------");
+                Console.WriteLine("----------------------------------");
+                Console.WriteLine();
             }
-
             #endregion
 
             Console.Read();

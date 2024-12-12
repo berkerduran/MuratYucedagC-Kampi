@@ -10,116 +10,172 @@ namespace _06_Arrays
     {
         static void Main(string[] args)
         {
-            #region Temel dizi örnekleri 
+            #region Temel Dizi Örnekleri
+
             //string[] colors = new string[4];
             //colors[0] = "Kırmızı";
             //colors[1] = "Sarı";
             //colors[2] = "Beyaz";
-            //colors[3] = "mavi";
+            //colors[3] = "Mavi";
+
             //Console.WriteLine(colors[2]);
 
             //string[] cities = new string[5];
-            //cities[0] = "izmir";
-            //cities[1] = "istanbul";
-            //cities[2] = "lyon";
-            //cities[3] = "kahire";
-            //cities[4] = "muğla";
-            //cities[5] = "balıkesir";
 
-            //Console.WriteLine(cities[5]);
+            //cities[0] = "Milano";
+            //cities[1] = "Budapeşte";
+            //cities[2] = "Lyon";
+            //cities[3] = "Kahire";
+            //cities[4] = "Üsküp";
+
+            //Console.WriteLine(cities[4]);
+
+            //int[] numbers = new int[10];
+
+            //numbers[0] = 50;
+            //numbers[1] = 40;
+            //numbers[2] = 698;
+            //numbers[3] = 24;
+            //numbers[7] = 748;
+
+            //Console.WriteLine(numbers[5]);
+
+            //string[] cities = { "Prag", "Roma", "Atina", "Ankara", "Bursa" };
+
+            //Console.WriteLine(cities[2]);
 
             #endregion
 
-            #region Dizideki tüm elemanları listeleme 
+            #region Dizideki Tüm Elemanları Listeleme
 
-            //string[] colors = { "Sarı", "Kırmızı", "Beyaz", "Mavi", "Turuncu", "Pembe" };
+            //string[] colors = { "Sarı", "Kırmızı", "Beyaz", "Mavi", "Yeşil", "Turuncu", "Pembe" };
 
             //for (int i = 0; i < colors.Length; i++)
             //{
             //    Console.WriteLine(colors[i]);
-
             //}
 
+            //int[] numbers = { 4, 85, 96, 74, 125, 638, 488, 7456, 2365, 1122 };
 
-            //int[] numbers = { 1, 20, 36, 48, 556, 678, 7464, 8, 9, 10, 11, 12, 13, 14, 15 };
-            //for (int i = 0; i <numbers.Length; i++)
+            //for (int i = 0; i < numbers.Length; i++)
             //{
-            //    if (numbers[i]%3==0)
+
+            //    if (numbers[i] % 3 == 0)
             //    {
             //        Console.WriteLine(numbers[i]);
             //    }
             //}
 
-
-            //char[] symbol = { 'a', 'b', 'c', 'd', 'e', 'f', 'g' };
-            //for (int i = 0; i < symbol.Length; i++)
+            //char[] symbols = { 'a', 'b', 'c', '*', '/', '-' };
+            //for (int i = 0; i < symbols.Length; i++)
             //{
-            //    Console.WriteLine(symbol[i]);
+            //    Console.WriteLine(symbols[i]);
             //}
 
-            //int[] myArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-            //int maxNumber = myArray[0];
-            //for (int i = 0; i < myArray.Length; i++)
+
+            //int[] my_array = { 47, 85, 96, 87, 32, 152, 658, 140 };
+
+            //int maxnumber = my_array[0];
+
+            //for (int i = 0; i < my_array.Length; i++)
             //{
-            //    if (myArray[i]>maxNumber)
+            //    if (my_array[i] > maxnumber)
             //    {
-            //        maxNumber = myArray[i];
+            //        maxnumber = my_array[i];
             //    }
-
             //}
-            //Console.WriteLine(maxNumber);
 
-            //string[] person = { "ali", "ahmet", "ayşe", "buse", "cem", "deniz" };
+            //Console.WriteLine(maxnumber);
 
-            //Console.WriteLine(person.Length);
+            //string[] persons = { "ali", "ahmet", "ayşe", "birgül", "cem", "deniz" };
+            //Console.WriteLine(persons.Length);
 
+            //int[] numbers = { 1, 2, 45, 82, 86, 10, 35 };
 
+            //Array.Sort(numbers);  Küçükten Büyüğe sıralıyor
+
+            //for (int i = 0; i < numbers.Length; i++) { 
+            //    Console.WriteLine(numbers[i]);
+            //}
+
+            //int[] numbers = { 1, 2, 45, 82, 86, 10, 35 };
+            //Array.Reverse(numbers);  diziyi tersten tekrar yaızyor
+
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    Console.WriteLine(numbers[i]);
+            //}
 
 
             #endregion
 
-            #region Dizi Metotları
-            //string[] customers = { "ali", "mehmet", "merve", "buse", "ayşegül", "çınar", "kaya" };
-            //int index = Array.IndexOf(customers ,"merve");
+            #region Dizi Metodları
+
+            //string[] customers = { "ali", "buse", "ayşegül", "merve", "çınar", "kaya" };
+            //int index = Array.IndexOf(customers, "merve"); index numarası
+
             //Console.WriteLine(index);
 
+            //int[] numbers = { 45, 83, 96, 63, 74, 10, 25, 22, 36 };
+            //Console.WriteLine("Dizinin en büyük elemanı: " + numbers.Max() 
+            //    + "Dizinin en küçük elemanı: " +  numbers.Min());
+
 
 
             #endregion
 
-            #region Kullanıcıdan Değer Alma 
+            #region Kullanıcıdan Değer Alma
 
             //string[] cities = new string[5];
 
             //for (int i = 0; i < cities.Length; i++)
             //{
-            //    Console.Write($"litfen {i + 1}. şehri giriniz: ");
+            //    Console.Write($"Lütfen {i + 1}. Şehri Giriniz: ");
             //    cities[i] = Console.ReadLine();
             //}
-            //Console.WriteLine();
 
-            //Console.WriteLine("----------------------");
+            //Console.WriteLine();
+            //Console.WriteLine("------------------------");
 
             //for (int i = 0; i < cities.Length; i++)
             //{
             //    Console.WriteLine(cities[i]);
             //}
 
-            int[] numbers = new int[10];
-            Console.WriteLine("lütfen toplmak istediğiniz elemanları girin");
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                numbers[i] = int.Parse(Console.ReadLine());
+            //int[] numbers = { 10, 20, 30, 40, 50 };
+            //int sum = 0;
 
-            }
-            int sum = 0;
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                sum += numbers[i];
-            }
-            Console.WriteLine("Sonuç:" + sum);
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    sum += numbers[i];
+            //}
+
+            //Console.WriteLine(sum);
+
+            //int[] numbers = { 21, 42, 33, 54, 55, 66, 897, 748, 39, 220 };
+            //Console.WriteLine("Çift Sayılar");
+
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    if (numbers[i] % 2 == 0)
+            //    {
+            //        Console.WriteLine(numbers[i]);
+            //    }
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine("Tek Sayılar");
+
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    if (numbers[i] % 2 == 1)
+            //    {
+            //        Console.WriteLine(numbers[i]);
+            //    }
+            //}
+
 
             #endregion
+
             Console.Read();
         }
     }
