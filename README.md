@@ -1,20 +1,31 @@
-🚀 C# EĞİTİM KAMPI PROJELERİ
-Bu repo, Murat Yücedağ'ın eğitmenliğinde gerçekleştirilen C# Eğitim Kampı süresince tamamladığım ilk 9 projeyi içermektedir. Her bir proje, belirli programlama kavramlarını anlama ve uygulama yeteneğimi geliştirmeme yardımcı oldu. Aşağıda her projeye dair teknik detayları bulabilirsiniz:
-✨ Proje 1: Merhaba Dünya!
-Bu projede, konsola yazı yazdırmayı öğrendim. Console.WriteLine() komutu ile temel yazdırma işlemlerini keşfettim ve bir C# programının yapısını kavradım. 🌍
-✨ Proje 2: Değişkenler
-Bu projede int, string, double gibi farklı veri türlerinde değişkenler tanımlamayı ve kullanmayı öğrendim. Veri tipleri ve değişkenler üzerinde işlemler yapmayı denedim. 🔢
-✨ Proje 3: Diziler (Arrays)
-Bu projede diziler ile çalışmayı öğrendim. Birden fazla değeri bir dizi içinde nasıl depolayabileceğimi ve döngülerle bu değerleri nasıl işleyebileceğimi keşfettim. 🧩
-✨ Proje 4: Karar Yapıları (If-Else)
-Bu proje ile if, else if ve else yapıları kullanarak karar mekanizmalarını oluşturdum. Programın farklı koşullara göre nasıl davrandığını test ettim. ⚖️
-✨ Proje 5: Döngüler (Loops)
-Bu projede for, while ve foreach döngüleri ile tanıştım. Döngülerle tekrarlayan işlemleri otomatikleştirme ve büyük veri gruplarını işleme becerisi kazandım. 🔄
-✨ Proje 6: Metotlar (Methods)
-Kodlarımı daha düzenli ve tekrar kullanılabilir hale getirmek için metotlar oluşturmayı öğrendim. Parametre alarak işlem yapan ve sonuç döndüren metotlar yazmayı denedim. 🛠️
-✨ Proje 7: Foreach Döngüsü ve Sınav Sistemi
-Bu projede foreach döngüsünü daha yakından inceleyip bir sınav sistemi simülasyonu oluşturdum. Öğrencilerin sınav notlarını alarak ortalamalarını hesapladım ve geçme/kalma durumlarını belirledim. 🎓
-✨ Proje 8: Geriye Değer Döndüren Fonksiyonlar
-Son projede geri değer döndüren metotlar ile çalıştım. Kullanıcıdan aldığım verileri işleyip sonuçları döndüren fonksiyonlar oluşturdum. Bu proje ile daha karmaşık işlemleri öğrenmiş oldum. 🎗️
-✨ Proje 9: Veritabanı Tabanlı Ürün-Kategori Bilgi Sistemi
-Bu projede veritabanı bağlantısı kurmayı ve veritabanından veri çekmeyi öğrendim. Kullanıcıdan tablo seçimini alarak, ilgili bilgileri ekran üzerinde listeleyen bir uygulama geliştirdim. SqlConnection ve SqlCommand sınıflarıyla veritabanına bağlanıp, sorgular çalıştırmayı deneyimledim. Bu projeyle birlikte veritabanı işlemleri ve veri akışı hakkında önemli bilgiler edindim. 💾
+🚀 C# Eğitim Kampı Projeleri
+Bu repo, Murat Yücedağ’ın eğitmenliğinde gerçekleştirdiğim C# Eğitim Kampı'nda geliştirdiğim projeleri içerir. Her bir proje, programlama becerilerimi geliştirmeme yardımcı oldu ve C# dilinin temel kavramlarını pekiştirdi. Aşağıda, her projeye dair kısa açıklamalar ve teknik detayları bulabilirsiniz.
+
+Proje 1: Merhaba Dünya!
+İlk proje olarak, temel bir Console.WriteLine() kullanarak konsola yazı yazdırmayı öğrendim. Bu basit adım, C# dilinin yapısını ve program akışını anlamamı sağladı.
+
+Proje 2: Değişkenler ve Veri Tipleri
+Farklı veri türlerinde (int, string, double) değişkenler tanımlayıp, bu değişkenler üzerinde işlem yaparak veri tiplerini keşfettim. Değişkenlerin nasıl tanımlandığını ve kullanıldığını pratik ettim.
+
+Proje 3: Dizilerle (Arrays) Çalışmak
+Dizilerle veri gruplarını yönetmeyi öğrendim. Birden fazla değeri tek bir yapı içinde saklayarak, döngüler yardımıyla bu veriler üzerinde işlem yapma konusunda deneyim kazandım.
+
+Proje 4: Karar Yapıları (If-Else)
+If-else blokları kullanarak, programın farklı koşullara göre nasıl tepki verdiğini inceledim. Kullanıcı girdilerine göre karar mekanizmaları oluşturarak dinamik programlamayı deneyimledim.
+
+Proje 5: Döngüler (Loops)
+For, While ve Foreach döngüleri ile tekrarlayan işlemleri otomatik hale getirdim. Bu projede, büyük veri gruplarını daha etkili yönetmeyi ve optimize etmeyi öğrendim.
+
+Proje 6: Metotlar (Functions)
+Yazdığım kodları daha düzenli ve modüler hale getirmek için metotlar oluşturmayı öğrendim. Parametre alarak iş yapan ve sonuç döndüren metotlarla, fonksiyonel programlama yeteneğimi geliştirdim.
+
+Proje 7: Sınav Sistemi Simülasyonu
+Foreach döngüsü ile bir sınav sistemi oluşturdum. Öğrenci notlarını işleyip ortalamalarını hesapladım, geçme/kalma durumlarını belirledim. Bu projede, gerçek dünya senaryolarına uygun simülasyonlar yaparak daha kapsamlı uygulamalar geliştirdim.
+
+Proje 8: Geriye Değer Döndüren Fonksiyonlar
+Bu projede kullanıcıdan alınan girdilere göre işlem yapan, sonuç döndüren fonksiyonlar geliştirdim. Geriye değer döndüren metotlar ile daha karmaşık işlemler gerçekleştirdim.
+
+Proje 9: Veritabanı Tabanlı Ürün-Kategori Bilgi Sistemi
+Bu projede, bir veritabanına bağlanarak verileri çekip ekranda listelemeyi öğrendim. SqlConnection ve SqlCommand sınıflarını kullanarak, veritabanından veri alıp kullanıcıya sunan bir uygulama geliştirdim. Bu sayede veritabanı yönetimi ve veri akışı konularında deneyim kazandım.
+
+
